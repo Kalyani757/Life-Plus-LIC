@@ -747,73 +747,89 @@ nav {
 .slide img {
     width: 100%;
 }
-
-/* Responsive adjustments for smaller screens */
 @media (max-width: 768px) {
     .container1 {
         flex-direction: column;
-        text-align: center;
+        align-items: flex-start;
+        padding: 10px 20px;
     }
 
     .header-right {
         flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .login-buttons {
         margin-top: 10px;
     }
+}
+ .slide img {
+    width: 100%;
+    height: auto;
+}
 
-    .login-buttons button {
-        width: 100%;
-        margin: 5px 0;
-    }
-
+.slideshow-container {
+    max-width: 100%;
+    overflow: hidden;
+}
+ @media (max-width: 768px) {
     .navbar {
         flex-direction: column;
-        padding: 0;
+        align-items: flex-start;
+    }
+
+    .navbar li {
+        width: 100%;
     }
 
     .navbar a {
-        display: block;
         padding: 15px;
+        display: block;
+        width: 100%;
     }
-
-    .slideshow-container {
-        padding: 0 10px;
-    }
-
+}
+ @media (max-width: 768px) {
     .calculator-grid {
-        grid-template-columns: 1fr; /* One column on small screens */
+        grid-template-columns: 1fr;
+        gap: 10px;
+    }
+}
+@media (max-width: 768px) {
+    .footer-container {
+        flex-direction: column;
+        align-items: center;
     }
 
+    .footer-column {
+        width: 100%;
+        text-align: center;
+    }
+
+    .footer-column ul li {
+        margin-bottom: 15px;
+    }
+}
+@media (max-width: 768px) {
     .services-container {
         flex-direction: column;
+        align-items: center;
     }
 
-    .footer-container {
-        padding: 0 20px;
+    .service-item {
+        width: 90%;
+        margin-bottom: 20px;
     }
 }
-
-/* Ensuring responsive typography */
-h1, h2, h3, p {
-    font-size: 1em;
-}
-
-@media (min-width: 768px) {
-    h1 {
-        font-size: 1.8em;
-    }
-
-    h2 {
-        font-size: 1.6em;
-    }
-
-    h3 {
-        font-size: 1.4em;
+@media (max-width: 768px) {
+    h1, h2, h3 {
+        font-size: 1.2em;
     }
 
     p {
-        font-size: 1.1em;
+        font-size: 0.8em;
+    }
+
+    .container1 {
+        padding: 10px;
     }
 }
-    
-}
-
