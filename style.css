@@ -747,89 +747,72 @@ nav {
 .slide img {
     width: 100%;
 }
+
+/* Responsive adjustments for smaller screens */
 @media (max-width: 768px) {
     .container1 {
         flex-direction: column;
-        align-items: flex-start;
-        padding: 10px 20px;
+        text-align: center;
     }
 
     .header-right {
         flex-direction: column;
-        align-items: flex-start;
-    }
-
-    .login-buttons {
         margin-top: 10px;
     }
-}
- .slide img {
-    width: 100%;
-    height: auto;
-}
 
-.slideshow-container {
-    max-width: 100%;
-    overflow: hidden;
-}
- @media (max-width: 768px) {
-    .navbar {
-        flex-direction: column;
-        align-items: flex-start;
+    .login-buttons button {
+        width: 100%;
+        margin: 5px 0;
     }
 
-    .navbar li {
-        width: 100%;
+    .navbar {
+        flex-direction: column;
+        padding: 0;
     }
 
     .navbar a {
-        padding: 15px;
         display: block;
-        width: 100%;
+        padding: 15px;
     }
-}
- @media (max-width: 768px) {
+
+    .slideshow-container {
+        padding: 0 10px;
+    }
+
     .calculator-grid {
-        grid-template-columns: 1fr;
-        gap: 10px;
-    }
-}
-@media (max-width: 768px) {
-    .footer-container {
-        flex-direction: column;
-        align-items: center;
+        grid-template-columns: 1fr; /* One column on small screens */
     }
 
-    .footer-column {
-        width: 100%;
-        text-align: center;
-    }
-
-    .footer-column ul li {
-        margin-bottom: 15px;
-    }
-}
-@media (max-width: 768px) {
     .services-container {
         flex-direction: column;
-        align-items: center;
     }
 
-    .service-item {
-        width: 90%;
-        margin-bottom: 20px;
+    .footer-container {
+        padding: 0 20px;
     }
 }
-@media (max-width: 768px) {
-    h1, h2, h3 {
-        font-size: 1.2em;
+
+/* Ensuring responsive typography */
+h1, h2, h3, p {
+    font-size: 1em;
+}
+
+@media (min-width: 768px) {
+    h1 {
+        font-size: 1.8em;
+    }
+
+    h2 {
+        font-size: 1.6em;
+    }
+
+    h3 {
+        font-size: 1.4em;
     }
 
     p {
-        font-size: 0.8em;
+        font-size: 1.1em;
     }
-
-    .container1 {
-        padding: 10px;
-    }
+}
+    
 }
