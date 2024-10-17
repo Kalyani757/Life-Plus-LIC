@@ -814,31 +814,6 @@ h1, h2, h3, p {
         font-size: 1.1em;
     }
 }
-    .table-responsive {
-    width: 100%;
-    overflow-x: auto; /* This will enable horizontal scrolling */
-    overflow-y: hidden;
-    -webkit-overflow-scrolling: touch; /* Smooth scrolling on mobile */
-}
-
-.investment-table {
-    width: 100%;
-    border-collapse: collapse;
-    min-width: 600px; /* Minimum width to trigger horizontal scroll */
-    table-layout: auto; /* Default table layout */
-}
-
-.investment-table th, .investment-table td {
-    padding: 10px;
-    border: 1px solid #ddd;
-    text-align: center;
-    white-space: nowrap; /* Ensure content stays in one line */
-}
-
-/* Remove or modify this media query if it's causing the issue */
-@media (max-width: 768px) {
-    .investment-table th, .investment-table td {
-        display: table-cell; /* Ensure it's still a table layout */
-    }
+    
 }
 
